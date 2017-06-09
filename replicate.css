@@ -2,7 +2,6 @@ html,
 body {
 	position: relative;
 	font-family: sans-serif;
-	margin: 0;
 	height: 100%;
 	box-sizing: border-box;
 }
@@ -71,18 +70,17 @@ li {
 	padding-bottom: 20px;
 }
 .main {
-	margin-left: 15px;
 	float: left;
 	height: auto;
 	width: 57%;
 	padding-bottom: 75px;
+	margin: auto;
 }
 .side {
-	margin-top: 220px;
 	float: right;
 	height: 250px;
 	width: 33%;
-	margin-right: 23px;
+	margin: 220px auto;
 }
 .footer {
 	clear: both;
@@ -217,4 +215,128 @@ li {
 	font-weight: bold;
 	margin-top: 14px;
 	margin-bottom: 60px;
+}
+.container {
+	margin-top: 0;
+	margin: auto;
+	position: relative;
+}
+.icon{
+	display: none;
+}
+#mobilelogo1 {
+	display: none;
+}
+#mobilelogo2 {
+	display: none;
+}
+@media screen and ( max-width: 1300px ){
+	.container {
+		width: 100%;
+		padding: 20px 2%;
+	}
+	.left{
+		width: 33%;
+	}
+	.middle{
+		width: 33%;
+	}
+	.right{	
+		width: 33%;
+	}
+	.icon {
+		display: block;
+		color: white;
+		font-size: 18px;
+	}
+	.text {
+		display: none;
+	}
+}
+@media screen and ( max-width: 1000px ){
+	#quicklinks {
+		columns: 2;
+	}
+}
+@media screen and ( max-width: 780px ){
+	#quicklinks {
+		columns: 1;
+	}
+}
+@media screen and ( max-width: 700px ){
+	.container {
+		display: table;
+		padding-top: 200px;
+	}
+	.side {
+		display: table-header-group;
+		width: 100%;
+		float: none;
+		padding-top: 200px;
+	}
+	.main {
+		display: table-footer-group;
+		margin-top: 20px;
+		width: 100%;
+		float: none;
+	}
+}
+@media screen and ( max-width: 600px ) {
+	.left,
+	.middle,
+	.right {
+		display: block;
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
+@media screen and ( max-width: 550px ) {
+	.container {
+		padding-top: 20px;
+	}
+	#pathways {
+		display: none;
+	}	
+	#logo {
+		display: none;
+	}
+	#header_image {
+		width: 75%;
+		height: 90px;
+		padding-right 0;
+		margin-right 0;
+		float: left;
+	}
+	.nav_menu {
+		width: 20%;
+		padding: 0;
+		margin: 0;
+		float: left;
+		margin-top: 25px;
+	}
+	.icon {
+		display: inline;
+	}
+	#mobilelogo1 {
+		display: inline;
+		float: left;
+		height: 100%;
+		width: 35%;
+		padding-top: 10px;
+	}
+	#mobilelogo2 {
+		display: inline;
+		float: left;
+		height: 100%;
+		width: 50%;
+		padding-top: 10px;
+	}
+	.container { 
+		display: table;
+	}
+	.footer{
+		height: auto;
+	}
 }
