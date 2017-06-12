@@ -20,6 +20,10 @@ div {
 	text-size-adjust: 100%;
 	float: left;
 }
+.headercont {
+	width: 1252px;
+	margin: 0 auto;
+}
 #header_image {
 	float: left;
 	height: 100px;
@@ -72,14 +76,14 @@ li {
 .main {
 	float: left;
 	height: auto;
-	width: 57%;
+	width: 69%;
 	padding-bottom: 75px;
 	margin: auto;
 }
 .side {
 	float: right;
 	height: 250px;
-	width: 33%;
+	width: 23%;
 	margin: 220px auto;
 }
 .footer {
@@ -92,6 +96,10 @@ li {
 	text-size-adjust: 100%;
 	display: table;
 	line-height: 24px;
+}
+.footercont {
+	width: 1252px;
+	margin: 0 auto;
 }
 .left{
 	width: 20%;
@@ -220,9 +228,13 @@ li {
 	margin-top: 0;
 	margin: auto;
 	position: relative;
+	width: 1252px;
 }
 .icon{
 	display: none;
+}
+.articlecont {
+	width: 80%;
 }
 #mobilelogo1 {
 	display: none;
@@ -230,11 +242,36 @@ li {
 #mobilelogo2 {
 	display: none;
 }
+#pathways2 {
+	display: none;
+}
 @media screen and ( max-width: 1300px ){
 	.container {
 		width: 100%;
 		padding: 20px 2%;
 	}
+}
+@media screen and ( max-width: 1000px ){
+	.left{
+		width: 23%;
+	}
+	.middle{
+		width: 54%;
+	}
+	.right{	
+		width: 23%;
+	}
+	#quicklinks {
+		columns: 2;
+	}
+	.main {
+		width: 59%;
+	}
+	.side {
+		width: 33%;
+	}
+}
+@media screen and ( max-width: 780px ){
 	.left{
 		width: 33%;
 	}
@@ -244,6 +281,11 @@ li {
 	.right{	
 		width: 33%;
 	}
+	#quicklinks {
+		columns: 1;
+	}
+}
+@media screen and ( max-width: 740px ){
 	.icon {
 		display: block;
 		color: white;
@@ -251,16 +293,6 @@ li {
 	}
 	.text {
 		display: none;
-	}
-}
-@media screen and ( max-width: 1000px ){
-	#quicklinks {
-		columns: 2;
-	}
-}
-@media screen and ( max-width: 780px ){
-	#quicklinks {
-		columns: 1;
 	}
 }
 @media screen and ( max-width: 700px ){
@@ -279,6 +311,16 @@ li {
 		margin-top: 20px;
 		width: 100%;
 		float: none;
+	}
+	#pathways {
+		display: none;
+	}
+	#pathways2 {
+		display: block;
+		width: 97%;
+	}
+	.container {
+		padding-top: 0;
 	}
 }
 @media screen and ( max-width: 600px ) {
@@ -338,5 +380,9 @@ li {
 	}
 	.footer{
 		height: auto;
+	}
+	#pathways2,
+	#pathways {
+		display: none;
 	}
 }
